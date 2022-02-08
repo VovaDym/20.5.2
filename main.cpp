@@ -41,7 +41,6 @@ int main() {
                         file << std::endl;
                     }
                 }
-
             }
         }
     }
