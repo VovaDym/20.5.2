@@ -25,23 +25,9 @@ int main() {
         {
             for (int j = 0;j < w; ++j)
             {
-                if (j == rand() % (w - 1))
-                {
-                    file << 1 << " ";
-                    if (j == w - 1)
-                    {
-                        file << std::endl;
-                    }
-                }
-                else
-                {
-                    file << 0 << " ";
-                    if (j == w - 1)
-                    {
-                        file << std::endl;
-                    }
-                }
+                file << rand() % 2 << " ";
             }
+            file << std::endl;
         }
     }
     file.close();
